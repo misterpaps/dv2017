@@ -4,8 +4,7 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package WordPress
- * @subpackage DV_Seventeen
+ * @package DV_Seventeen
  * @since 1.0
  */
 

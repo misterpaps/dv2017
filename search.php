@@ -4,8 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package WordPress
- * @subpackage DV_Seventeen
+ * @package DV_Seventeen
  * @since 1.0
  * @version 1.0
  */

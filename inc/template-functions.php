@@ -2,8 +2,7 @@
 /**
  * Additional features to allow styling of the templates
  *
- * @package WordPress
- * @subpackage DV_Seventeen
+ * @package DV_Seventeen
  * @since 1.0
  */
 

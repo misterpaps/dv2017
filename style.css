@@ -1,18 +1,19 @@
 @charset "UTF-8";
 /*!
-Theme Name: Twenty Seventeen
-Theme URI: https://wordpress.org/themes/twentyseventeen/
-Author: the WordPress team
-Author URI: https://wordpress.org/
-Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a focus on business sites, it features multiple sections on the front page as well as widgets, navigation and social menus, a logo, and more. Personalize its asymmetrical grid with a custom color scheme and showcase your multimedia content with post formats. Our default theme for 2017 works great in many languages, for any abilities, and on any device.
+Theme Name: DV Seventeen
+Author: Paps
+Author URI: https://davidpapineau.com/
+Description: DV Seventeen is a custom WP theme based on Twenty Seventeen.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: twentyseventeen
-Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+Text Domain: dvseventeen
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
+
+This theme uses Jim Frenette's Sass version of twentyseventeen, modified to have an expanded directory structure more like the _S starter theme.
+It also uses Morten Rand-Hendriksen's external gulp-dev folder to track updates, instead of Frenette's gulp set-up. 
 */
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
@@ -1554,7 +1555,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	position: relative;
 }
 
-.has-header-image.twentyseventeen-front-page .custom-header, .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
+.has-header-image.dvseventeen-front-page .custom-header, .has-header-video.dvseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
 	display: table;
 	height: 300px;
 	height: 75vh;
@@ -1652,7 +1653,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 	top: 62px;
 }
 
-.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+.has-header-image:not(.dvseventeen-front-page):not(.home) .custom-header-media img {
 	bottom: 0;
 	position: absolute;
 	top: auto;
@@ -1682,7 +1683,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 		transform: none;
 		width: 100%;
 	}
-	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media img {
+	.has-header-image:not(.dvseventeen-front-page):not(.home) .custom-header-media img {
 		height: 100%;
 		left: 0;
 		-o-object-fit: cover;
@@ -1699,7 +1700,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	display: none;
 }
 
-.has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
+.has-header-image.dvseventeen-front-page .site-branding, .has-header-video.dvseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
 	display: table-cell;
 	height: 100%;
 	vertical-align: bottom;
@@ -1708,11 +1709,11 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 /*--------------------------------------------------------------
 13.2 Front Page
 --------------------------------------------------------------*/
-.twentyseventeen-front-page .site-content {
+.dvseventeen-front-page .site-content {
 	padding: 0;
 }
 
-.twentyseventeen-panel {
+.dvseventeen-panel {
 	overflow: hidden;
 	position: relative;
 }
@@ -1744,7 +1745,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	top: 100px;
 }
 
-.twentyseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
+.dvseventeen-front-page article:not(.has-post-thumbnail):not(:first-child) {
 	border-top: 1px solid #ddd;
 }
 
@@ -1758,18 +1759,18 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 }
 
 /* Panel edit link */
-.twentyseventeen-panel .edit-link {
+.dvseventeen-panel .edit-link {
 	display: block;
 	margin: 0.3em 0 0;
 }
 
-.twentyseventeen-panel .entry-header .edit-link {
+.dvseventeen-panel .entry-header .edit-link {
 	font-size: 14px;
 	font-size: 0.875rem;
 }
 
 /* Front Page - Recent Posts */
-.twentyseventeen-front-page .panel-content .recent-posts article {
+.dvseventeen-front-page .panel-content .recent-posts article {
 	border: 0;
 	color: #333;
 	margin-bottom: 3em;
@@ -1787,7 +1788,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	text-transform: none;
 }
 
-.twentyseventeen-panel .recent-posts .entry-header .edit-link {
+.dvseventeen-panel .recent-posts .entry-header .edit-link {
 	color: #222;
 	display: inline-block;
 	font-size: 11px;
@@ -1828,7 +1829,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	width: 20px;
 }
 
-.page .panel-content .entry-title, .page-title, body.page:not(.twentyseventeen-front-page) .entry-title {
+.page .panel-content .entry-title, .page-title, body.page:not(.dvseventeen-front-page) .entry-title {
 	color: #222;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1960,18 +1961,18 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	padding-bottom: 2em;
 }
 
-body:not(.twentyseventeen-front-page) .entry-header {
+body:not(.dvseventeen-front-page) .entry-header {
 	padding: 1em 0;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-body:not(.twentyseventeen-front-page) .entry-content, body:not(.twentyseventeen-front-page) #comments {
+body:not(.dvseventeen-front-page) .entry-content, body:not(.dvseventeen-front-page) #comments {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-body:not(.twentyseventeen-front-page) .entry-header {
+body:not(.dvseventeen-front-page) .entry-header {
 	padding-top: 0;
 }
 
@@ -2008,7 +2009,7 @@ body:not(.twentyseventeen-front-page) .entry-header {
 }
 
 /* Single Post */
-.single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.twentyseventeen-front-page) #primary {
+.single-post:not(.has-sidebar) #primary, .page.page-one-column:not(.dvseventeen-front-page) #primary {
 	margin-left: auto;
 	margin-right: auto;
 	max-width: 740px;
@@ -2934,7 +2935,7 @@ embed, iframe, object {
 /*--------------------------------------------------------------
 17.0 Customizer
 --------------------------------------------------------------*/
-.highlight-front-sections.twentyseventeen-customizer.twentyseventeen-front-page .twentyseventeen-panel:after {
+.highlight-front-sections.dvseventeen-customizer.dvseventeen-front-page .dvseventeen-panel:after {
 	border: 2px dashed #0085ba;
 	/* Matches visible edit shortcuts. */
 	bottom: 1em;
@@ -2947,13 +2948,13 @@ embed, iframe, object {
 	z-index: 1;
 }
 
-.highlight-front-sections.twentyseventeen-customizer.twentyseventeen-front-page .twentyseventeen-panel .panel-content {
+.highlight-front-sections.dvseventeen-customizer.dvseventeen-front-page .dvseventeen-panel .panel-content {
 	z-index: 2;
 	/* Prevent :after from preventing interactions within the section */
 }
 
 /* Used for placeholder text */
-.twentyseventeen-customizer.twentyseventeen-front-page .twentyseventeen-panel .twentyseventeen-panel-title {
+.dvseventeen-customizer.dvseventeen-front-page .dvseventeen-panel .dvseventeen-panel-title {
 	display: block;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -2965,21 +2966,21 @@ embed, iframe, object {
 }
 
 /* Show borders on the custom page panels only when the front page sections are being edited */
-.highlight-front-sections.twentyseventeen-customizer.twentyseventeen-front-page .twentyseventeen-panel:nth-of-type(1):after {
+.highlight-front-sections.dvseventeen-customizer.dvseventeen-front-page .dvseventeen-panel:nth-of-type(1):after {
 	border: none;
 }
 
-.twentyseventeen-front-page.twentyseventeen-customizer #primary article.panel-placeholder {
+.dvseventeen-front-page.dvseventeen-customizer #primary article.panel-placeholder {
 	border: 0;
 }
 
 /* Add some space around the visual edit shortcut buttons. */
-.twentyseventeen-panel .customize-partial-edit-shortcut button {
+.dvseventeen-panel .customize-partial-edit-shortcut button {
 	top: 30px;
 	left: 30px;
 }
 
-.twentyseventeen-panel .customize-partial-edit-shortcut-hidden:before {
+.dvseventeen-panel .customize-partial-edit-shortcut-hidden:before {
 	visibility: visible;
 }
 
@@ -3176,7 +3177,7 @@ embed, iframe, object {
 	.site-branding {
 		margin-bottom: 0;
 	}
-	.has-header-image.twentyseventeen-front-page .site-branding, .has-header-video.twentyseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
+	.has-header-image.dvseventeen-front-page .site-branding, .has-header-video.dvseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
 		bottom: 0;
 		display: block;
 		left: 0;
@@ -3185,7 +3186,7 @@ embed, iframe, object {
 		position: absolute;
 		width: 100%;
 	}
-	.has-header-image.twentyseventeen-front-page .custom-header, .has-header-video.twentyseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
+	.has-header-image.dvseventeen-front-page .custom-header, .has-header-video.dvseventeen-front-page .custom-header, .has-header-image.home.blog .custom-header, .has-header-video.home.blog .custom-header {
 		display: block;
 		height: auto;
 	}
@@ -3193,7 +3194,7 @@ embed, iframe, object {
 		height: 165px;
 		position: relative;
 	}
-	.twentyseventeen-front-page.has-header-image .custom-header-media, .twentyseventeen-front-page.has-header-video .custom-header-media {
+	.dvseventeen-front-page.has-header-image .custom-header-media, .dvseventeen-front-page.has-header-video .custom-header-media {
 		height: 0;
 		position: relative;
 	}
@@ -3201,7 +3202,7 @@ embed, iframe, object {
 		height: 0;
 		position: relative;
 	}
-	.has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media, .has-header-video:not(.twentyseventeen-front-page):not(.home) .custom-header-media {
+	.has-header-image:not(.dvseventeen-front-page):not(.home) .custom-header-media, .has-header-video:not(.dvseventeen-front-page):not(.home) .custom-header-media {
 		bottom: 0;
 		height: auto;
 		left: 0;
@@ -3431,13 +3432,13 @@ embed, iframe, object {
 		width: 18px;
 	}
 	/* Front Page */
-	.twentyseventeen-front-page.has-header-image .site-branding, .twentyseventeen-front-page.has-header-video .site-branding {
+	.dvseventeen-front-page.has-header-image .site-branding, .dvseventeen-front-page.has-header-video .site-branding {
 		margin-bottom: 70px;
 	}
 	.home.blog.has-header-image .site-branding, .home.blog.has-header-video .site-branding {
 		margin-bottom: 70px;
 	}
-	.twentyseventeen-front-page.has-header-image .custom-header-media, .twentyseventeen-front-page.has-header-video .custom-header-media {
+	.dvseventeen-front-page.has-header-image .custom-header-media, .dvseventeen-front-page.has-header-video .custom-header-media {
 		height: 1200px;
 		height: 100vh;
 		max-height: 100%;
@@ -3449,13 +3450,13 @@ embed, iframe, object {
 		max-height: 100%;
 		overflow: hidden;
 	}
-	.twentyseventeen-front-page.has-header-image .custom-header-media:before, .twentyseventeen-front-page.has-header-video .custom-header-media:before {
+	.dvseventeen-front-page.has-header-image .custom-header-media:before, .dvseventeen-front-page.has-header-video .custom-header-media:before {
 		height: 33%;
 	}
 	.home.blog.has-header-image .custom-header-media:before, .home.blog.has-header-video .custom-header-media:before {
 		height: 33%;
 	}
-	.admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media, .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media {
+	.admin-bar.dvseventeen-front-page.has-header-image .custom-header-media, .admin-bar.dvseventeen-front-page.has-header-video .custom-header-media {
 		height: calc(100vh - 32px);
 	}
 	.admin-bar.home.blog.has-header-image .custom-header-media, .admin-bar.home.blog.has-header-video .custom-header-media {
@@ -3612,11 +3613,11 @@ embed, iframe, object {
 		width: 62%;
 	}
 	/* blog and archive */
-	.blog:not(.has-sidebar) .entry-content blockquote.alignleft, .twentyseventeen-front-page.page-two-column .entry-content blockquote.alignleft, .archive:not(.has-sidebar) .entry-content blockquote.alignleft, .page-two-column .entry-content blockquote.alignleft {
+	.blog:not(.has-sidebar) .entry-content blockquote.alignleft, .dvseventeen-front-page.page-two-column .entry-content blockquote.alignleft, .archive:not(.has-sidebar) .entry-content blockquote.alignleft, .page-two-column .entry-content blockquote.alignleft {
 		margin-left: -72.5%;
 		width: 62%;
 	}
-	.blog:not(.has-sidebar) .entry-content blockquote.alignright, .twentyseventeen-front-page.page-two-column .entry-content blockquote.alignright, .archive:not(.has-sidebar) .entry-content blockquote.alignright, .page-two-column .entry-content blockquote.alignright {
+	.blog:not(.has-sidebar) .entry-content blockquote.alignright, .dvseventeen-front-page.page-two-column .entry-content blockquote.alignright, .archive:not(.has-sidebar) .entry-content blockquote.alignright, .page-two-column .entry-content blockquote.alignright {
 		margin-right: 0;
 		width: 36%;
 	}
@@ -3625,7 +3626,7 @@ embed, iframe, object {
 		left: -1.5em;
 	}
 	/* Pages */
-	.page.page-one-column .entry-header, .twentyseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
+	.page.page-one-column .entry-header, .dvseventeen-front-page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
 		margin-bottom: 4em;
 	}
 	.page:not(.home) #content {
@@ -3768,7 +3769,7 @@ embed, iframe, object {
 	.has-sidebar .entry-content blockquote.alignleft {
 		margin-left: -20%;
 	}
-	.blog:not(.has-sidebar) .entry-content blockquote.alignright, .archive:not(.has-sidebar) .entry-content blockquote.alignright, .page-two-column .entry-content blockquote.alignright, .twentyseventeen-front-page .entry-content blockquote.alignright {
+	.blog:not(.has-sidebar) .entry-content blockquote.alignright, .archive:not(.has-sidebar) .entry-content blockquote.alignright, .page-two-column .entry-content blockquote.alignright, .dvseventeen-front-page .entry-content blockquote.alignright {
 		margin-right: -20%;
 	}
 }
@@ -3840,7 +3841,7 @@ embed, iframe, object {
 	}
 	.page .panel-content .entry-title,
 	.page-title,
-	body.page:not(.twentyseventeen-front-page) .entry-title {
+	body.page:not(.dvseventeen-front-page) .entry-title {
 		font-size: 10pt;
 	}
 	/* Layout */
@@ -3857,8 +3858,8 @@ embed, iframe, object {
 	.custom-header-media {
 		padding: 0;
 	}
-	.twentyseventeen-front-page.has-header-image .site-branding,
-	.twentyseventeen-front-page.has-header-video .site-branding {
+	.dvseventeen-front-page.has-header-image .site-branding,
+	.dvseventeen-front-page.has-header-video .site-branding {
 		position: relative;
 	}
 	.home.blog.has-header-image .site-branding,
@@ -3893,10 +3894,10 @@ embed, iframe, object {
 		color: #222 !important;
 		/* Make sure color schemes don't affect to print */
 	}
-	.twentyseventeen-front-page.has-header-image .site-title,
-	.twentyseventeen-front-page.has-header-video .site-title,
-	.twentyseventeen-front-page.has-header-image .site-title a,
-	.twentyseventeen-front-page.has-header-video .site-title a {
+	.dvseventeen-front-page.has-header-image .site-title,
+	.dvseventeen-front-page.has-header-video .site-title,
+	.dvseventeen-front-page.has-header-image .site-title a,
+	.dvseventeen-front-page.has-header-video .site-title a {
 		color: #222 !important;
 		/* Make sure color schemes don't affect to print */
 	}
@@ -3905,8 +3906,8 @@ embed, iframe, object {
 		color: #777 !important;
 		/* Make sure color schemes don't affect to print */
 	}
-	.twentyseventeen-front-page.has-header-image .site-description,
-	.twentyseventeen-front-page.has-header-video .site-description {
+	.dvseventeen-front-page.has-header-image .site-description,
+	.dvseventeen-front-page.has-header-video .site-description {
 		color: #777 !important;
 		/* Make sure color schemes don't affect to print */
 	}
@@ -3927,4 +3928,4 @@ embed, iframe, object {
 	}
 }
 
-/*# sourceMappingURL=../twentyseventeen/sass/maps/style.css.map */
+/*# sourceMappingURL=../dvseventeen/sass/maps/style.css.map */

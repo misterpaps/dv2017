@@ -6,8 +6,7 @@
  * since this theme is not meant to be backward compatible beyond that and
  * relies on many newer functions and markup changes introduced in 4.7.
  *
- * @package WordPress
- * @subpackage DV_Seventeen
+ * @package DV_Seventeen
  * @since DV Seventeen 1.0
  */
 

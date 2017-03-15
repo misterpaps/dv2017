@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Custom_Headers
  *
- * @package WordPress
- * @subpackage DV_Seventeen
+ * @package DV_Seventeen
  * @since 1.0
  */
 
