@@ -1,0 +1,55 @@
+.highlight-front-sections.dvseventeen-customizer.dvseventeen-front-page .dvseventeen-panel {
+  &:after {
+    border: 2px dashed $blue1;
+    /* Matches visible edit shortcuts. */
+    bottom: 1em;
+    content: "";
+    display: block;
+    left: 1em;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1;
+  }
+  .panel-content {
+    z-index: 2;
+    /* Prevent :after from preventing interactions within the section */
+  }
+}
+
+/* Used for placeholder text */
+
+.dvseventeen-customizer.dvseventeen-front-page .dvseventeen-panel .dvseventeen-panel-title {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 3em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Show borders on the custom page panels only when the front page sections are being edited */
+
+.highlight-front-sections.dvseventeen-customizer.dvseventeen-front-page .dvseventeen-panel:nth-of-type(1):after {
+  border: none;
+}
+
+.dvseventeen-front-page.dvseventeen-customizer #primary article.panel-placeholder {
+  border: 0;
+}
+
+/* Add some space around the visual edit shortcut buttons. */
+
+.dvseventeen-panel {
+  .customize-partial-edit-shortcut button {
+    top: 30px;
+    left: 30px;
+  }
+  .customize-partial-edit-shortcut-hidden:before {
+    visibility: visible;
+  }
+}
+
+/* Ensure that placeholder icons are visible. */
