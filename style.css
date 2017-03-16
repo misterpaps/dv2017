@@ -789,7 +789,7 @@ input[type="radio"] + label, input[type="checkbox"] + label {
 }
 
 button {
-	background-color: #222;
+	background-color: #3fae2a;
 	border: 0;
 	border-radius: 2px;
 	box-shadow: none;
@@ -807,7 +807,7 @@ button {
 }
 
 input[type="button"], input[type="submit"] {
-	background-color: #222;
+	background-color: #3fae2a;
 	border: 0;
 	border-radius: 2px;
 	box-shadow: none;
@@ -847,11 +847,11 @@ button:hover, button:focus {
 }
 
 input[type="button"]:hover, input[type="button"]:focus {
-	background: #767676;
+	background: rgba(63, 174, 42, 0.8);
 }
 
 input[type="submit"]:hover, input[type="submit"]:focus {
-	background: #767676;
+	background: rgba(63, 174, 42, 0.8);
 }
 
 button.secondary:hover, button.secondary:focus {
@@ -1102,8 +1102,7 @@ a .nav-title,
 }
 
 .site-footer .widget-area a:focus, .site-footer .widget-area a:hover {
-	color: #000;
-	box-shadow: inset 0 0 0 transparent, 0 3px 0 black;
+	color: #f1f1f1;
 }
 
 .posts-navigation a:focus, .posts-navigation a:hover {
@@ -1194,8 +1193,7 @@ a:hover .nav-title {
 }
 
 .site-info a:focus, .site-info a:hover {
-	color: #000;
-	box-shadow: inset 0 0 0 transparent, 0 3px 0 black;
+	color: #f1f1f1;
 }
 
 .widget .widget-title a:focus, .widget .widget-title a:hover {
@@ -2223,6 +2221,10 @@ body:not(.dvseventeen-front-page) .entry-header {
 --------------------------------------------------------------*/
 .site-footer {
 	border-top: 1px solid #eee;
+	color: white;
+	background-color: #0077c9;
+	background-image: -webkit-linear-gradient(150deg, #3fae2a 20%, #0077c9 20%);
+	min-height: 200px;
 }
 
 .site-footer .wrap {
@@ -2252,9 +2254,9 @@ body:not(.dvseventeen-front-page) .entry-header {
 }
 
 .social-navigation a {
-	background-color: #767676;
+	background-color: #eee;
 	border-radius: 40px;
-	color: #fff;
+	color: #0077c9;
 	display: inline-block;
 	height: 40px;
 	margin: 0 1em 0.5em 0;
@@ -2263,7 +2265,7 @@ body:not(.dvseventeen-front-page) .entry-header {
 }
 
 .social-navigation a:hover, .social-navigation a:focus {
-	background-color: #333;
+	background-color: rgba(241, 241, 241, 0.85);
 }
 
 .social-navigation .icon {
@@ -2281,7 +2283,12 @@ body:not(.dvseventeen-front-page) .entry-header {
 }
 
 .site-info a {
-	color: #666;
+	color: #eee;
+	text-decoration: none;
+}
+
+.site-info a:hover {
+	color: rgba(238, 238, 238, 0.85);
 }
 
 .site-info .sep {
@@ -3163,12 +3170,10 @@ embed, iframe, object {
 	}
 	.has-sidebar:not(.error404) #primary {
 		float: left;
-		width: 58%;
 	}
 	.has-sidebar #secondary {
 		float: right;
 		padding-top: 0;
-		width: 36%;
 	}
 	.error404 #primary {
 		float: none;
@@ -3474,19 +3479,21 @@ embed, iframe, object {
 	.background-fixed .panel-image {
 		background-attachment: fixed;
 	}
-	.page-two-column .panel-content .entry-header {
-		float: left;
-		width: 36%;
-	}
-	.page-two-column .panel-content .entry-content {
-		float: right;
-		width: 58%;
-	}
-	.page-two-column .panel-content .recent-posts {
-		clear: right;
-		float: right;
-		width: 58%;
-	}
+	/* .page-two-column .panel-content {
+    .entry-header {
+      float: left;
+      width: 36%;
+    }
+    .entry-content {
+      float: right;
+      width: 58%;
+    }
+    .recent-posts {
+      clear: right;
+      float: right;
+      width: 58%;
+    }
+  } */
 	/* Front Page - Recent Posts */
 	.panel-content .recent-posts article {
 		margin-bottom: 4em;

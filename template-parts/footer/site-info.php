@@ -9,5 +9,5 @@
 
 ?>
 <div class="site-info">
-	<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'dvseventeen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'dvseventeen' ), 'WordPress' ); ?></a>
+		<p>&copy; <?php echo date('Y'); ?> Ridgeline Events</p>
 </div><!-- .site-info -->

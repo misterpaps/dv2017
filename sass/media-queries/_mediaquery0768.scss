@@ -20,12 +20,12 @@
   .has-sidebar {
     &:not(.error404) #primary {
       float: left;
-      width: 58%;
+      // width: 58%;
     }
     #secondary {
       float: right;
       padding-top: 0;
-      width: 36%;
+      // width: 36%;
     }
   }
   .error404 #primary {
@@ -398,7 +398,7 @@
   .background-fixed .panel-image {
     background-attachment: fixed;
   }
-  .page-two-column .panel-content {
+  /* .page-two-column .panel-content {
     .entry-header {
       float: left;
       width: 36%;
@@ -412,7 +412,7 @@
       float: right;
       width: 58%;
     }
-  }
+  } */
   /* Front Page - Recent Posts */
   .panel-content .recent-posts {
     article {

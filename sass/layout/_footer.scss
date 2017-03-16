@@ -1,5 +1,9 @@
 .site-footer {
   border-top: 1px solid $silver2;
+  color: white;
+  background-color: $dv-blue;
+  background-image: -webkit-linear-gradient(150deg, $dv-green 20%, $dv-blue 20%);
+  min-height: 200px;
   .wrap {
     padding-bottom: 1.5em;
     padding-top: 2em;
@@ -23,17 +27,17 @@
     display: inline;
   }
   a {
-    background-color: $gray1;
+    background-color: $silver2;
     -webkit-border-radius: 40px;
     border-radius: 40px;
-    color: $white1;
+    color: $dv-blue;
     display: inline-block;
     height: 40px;
     margin: 0 1em 0.5em 0;
     text-align: center;
     width: 40px;
     &:hover, &:focus {
-      background-color: $black3;
+      background-color: rgba($silver1, 0.85);
     }
   }
   .icon {
@@ -51,7 +55,12 @@
   font-size: 0.875rem;
   margin-bottom: 1em;
   a {
-    color: $gray3;
+    color: $silver2;
+    text-decoration: none;
+
+    &:hover {
+      color: rgba($silver2, 0.85);
+    }
   }
   .sep {
     margin: 0;

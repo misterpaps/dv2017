@@ -91,8 +91,8 @@ function dvseventeen_setup() {
 
 	// Add theme support for Custom Logo.
 	add_theme_support( 'custom-logo', array(
-		'width'       => 250,
-		'height'      => 250,
+		'width'       => 500,
+		'height'      => 500,
 		'flex-width'  => true,
 	) );
 
