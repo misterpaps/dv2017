@@ -1,0 +1,24 @@
+.ridgeline-links {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ridgeline-link {
+	padding: 0 1em;
+	width: 270px;
+
+
+	a {
+		box-shadow: none;
+	}
+
+	a img {
+		box-shadow: none;	
+	}
+}
+
+#text-6 {
+	padding-bottom: 0px;
+}
+

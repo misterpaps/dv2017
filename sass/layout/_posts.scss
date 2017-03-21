@@ -18,12 +18,11 @@
 }
 
 .page .panel-content .entry-title, .page-title, body.page:not(.dvseventeen-front-page) .entry-title {
-  color: $black2;
-  font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 800;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  color: $dv-blue;
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 .entry-header .entry-title {

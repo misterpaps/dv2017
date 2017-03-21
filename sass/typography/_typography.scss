@@ -26,28 +26,32 @@ h6:first-child {
 h1 {
   font-size: 24px;
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 h2 {
   color: $gray3;
   font-size: 20px;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 h3 {
   color: $black3;
   font-size: 18px;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 700;
+  text-transform: lowercase;
 }
 
 h4 {
   color: $black3;
   font-size: 16px;
   font-size: 1rem;
-  font-weight: 800;
+  font-weight: 600;
+  text-transform: lowercase;
 }
 
 h5 {

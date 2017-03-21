@@ -449,6 +449,8 @@ function dvseventeen_scripts() {
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
+	wp_enqueue_script( 'custom-js', get_theme_file_uri( '/assets/js/scripts.js' ), array( 'jquery' ), '1.0.0', true );
+
 	wp_localize_script( 'dvseventeen-skip-link-focus-fix', 'dvseventeenScreenReaderText', $dvseventeen_l10n );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

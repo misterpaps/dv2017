@@ -10,9 +10,11 @@
 ?>
 <div class="site-branding">
 	<div class="wrap">
+		<div class="site-branding-logo">
+			<img src="http://diezvista.dev/wp-content/themes/dvseventeen/assets/images/logos/Diez-Vista-diamond-logo-white.svg" />
+		</div>
 
-		<?php the_custom_logo(); ?>
-
+		
 		<div class="site-branding-text">
 			<?php if ( is_front_page() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

@@ -67,7 +67,7 @@ function dvseventeen_customize_register( $wp_customize ) {
 	) );
 
 	$wp_customize->add_setting( 'page_layout', array(
-		'default'           => 'two-column',
+		'default'           => 'one-column',
 		'sanitize_callback' => 'dvseventeen_sanitize_page_layout',
 		'transport'         => 'postMessage',
 	) );
