@@ -1,0 +1,158 @@
+/* Sponsor Widget Styles */
+
+.sponsors-panel {
+	border-top: 1px solid #ddd;
+	width: 100%;
+	
+	&-inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;	
+	}
+}
+
+.partner-logo {
+	padding: 10px;
+}
+
+.wrap-wide {
+	width: 100%;
+	padding-bottom: 2em;
+  padding-top: 2.5em;
+
+  h2 {
+  	display: none;
+  }
+
+	@media screen and (min-width: 48em) {
+		padding-left: 5em;
+		padding-right: 5em;
+		padding-bottom: 0;
+	}
+}
+
+/* Sponsor-Specific Styles */
+
+.partner-logo {
+	text-align: center;
+	min-width: 120px;
+}
+
+.logo-salomon {
+	width: 120px;
+}
+
+.logo-suunto {
+	width: 90px;
+}
+
+.logo-nesters-market {
+	width: 140px;
+}
+
+.logo-runners-den {
+	min-width: 90px;
+	width: 90px;
+}
+
+
+.logo-drymax {
+	width: 85px;
+}
+
+.logo-princeton-tec {
+	width: 110px;
+}
+
+.logo-canada-wide {
+	width: 140px;
+}
+
+.logo-hammer {
+
+}
+
+.logo-trailmapps {
+	width: 160px;
+}
+
+
+.logo-mapmakers {
+
+}
+
+
+.logo-bremners {
+
+}
+
+.logo-galileo {
+
+}
+
+.logo-bc-hydro {
+	width: 140px;
+}
+
+.logo-broadway-run-club {
+
+}
+
+
+@media screen and (min-width: 48em) {
+	.partner-logo {
+		box-sizing: content-box;
+		min-width: 180px;
+		height: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+
+	.logo-salomon {
+		min-width: 160px;
+		width: 160px;
+	}
+
+	.logo-nesters-market {
+		width: 200px;
+	}
+
+	.logo-runners-den {
+		min-width: 130px;
+		width: 130px;
+	}
+
+	.logo-suunto {
+		width: 180px;
+	}
+
+	.logo-drymax {
+		min-width: 150px;
+		width: 150px;
+	}
+
+	.logo-princeton-tec {
+		width: 200px;
+	}
+
+	.logo-canada-wide {
+		width: 200px;
+	}
+
+	.logo-hammer {
+		min-width: 150px;
+		width: 150px;
+	}
+	.logo-trailmapps {
+		width: 220px;
+	}	
+
+	.logo-bc-hydro {
+		width: 200px;
+	}
+
+}
+
+

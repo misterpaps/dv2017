@@ -731,6 +731,14 @@ html[lang="ar"] *, html[lang="ary"] *, html[lang="azb"] *, html[lang="haz"] *, h
 	letter-spacing: 0 !important;
 }
 
+/* Fine Print */
+.fine-print {
+	padding-top: 2em;
+	font-weight: 300;
+	font-style: italic;
+	letter-spacing: 0.03em;
+}
+
 /*--------------------------------------------------------------
 6.0 Forms
 --------------------------------------------------------------*/
@@ -972,6 +980,77 @@ td:last-child {
 	padding-right: 0;
 }
 
+.course-records-container {
+	text-align: center;
+	padding-bottom: 1.5em;
+}
+
+.course-records-title,
+.previous-results-title {
+	color: #0077c9;
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+.course-record {
+	font-size: 1.25rem;
+	padding-bottom: 0.5em;
+}
+
+.results-list {
+	font-size: 0.875em;
+}
+
+@media screen and (min-width: 48em) {
+	.results-list {
+		font-size: 1em;
+	}
+}
+
+.results-list td {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.results-list tr {
+	background-color: #fff;
+}
+
+.results-list tr:hover {
+	background-color: #fafafa;
+	-webkit-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+}
+
+.results-year {
+	padding-right: 3%;
+	padding-left: 1%;
+}
+
+.results-winner {
+	padding-left: 3%;
+}
+
+.results-time {
+	padding-right: 3%;
+}
+
+.results-link {
+	text-align: right;
+}
+
+td.results-link a:hover,
+.entry-content a:hover {
+	box-shadow: none;
+}
+
+.results-no-race {
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	font-size: 0.875em;
+}
+
 /*--------------------------------------------------------------
 10.0 Links
 --------------------------------------------------------------*/
@@ -990,7 +1069,6 @@ a:hover, a:active {
 }
 
 /* Hover effects */
-.entry-content a,
 .entry-summary a,
 .widget a,
 .posts-navigation a,
@@ -1089,9 +1167,14 @@ a .nav-title,
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
 }
 
+.entry-content a {
+	color: #0077c9;
+}
+
 .entry-content a:focus, .entry-content a:hover {
 	color: #000;
-	box-shadow: inset 0 0 0 transparent, 0 3px 0 black;
+	-webkit-transition: color 80ms ease-in;
+	transition: color 80ms ease-in;
 }
 
 .entry-summary a:focus, .entry-summary a:hover {
@@ -1103,8 +1186,8 @@ a .nav-title,
 .widget a {
   &:focus, &:hover {
     color: $black1;
-    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
-    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 rgba(0, 0, 0, 1);
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 1);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 2px 0 rgba(0, 0, 0, 1);
   }
 }
 
@@ -1266,7 +1349,7 @@ a:hover .nav-title {
 }
 
 .navigation-top .current-menu-item > a, .navigation-top .current_page_item > a {
-	color: #767676;
+	color: #000;
 }
 
 .main-navigation {
@@ -1333,7 +1416,7 @@ a:hover .nav-title {
 }
 
 .main-navigation a:hover {
-	color: #767676;
+	color: #333;
 }
 
 /* Menu toggle */
@@ -1341,7 +1424,7 @@ a:hover .nav-title {
 	background-color: transparent;
 	border: 0;
 	box-shadow: none;
-	color: #222;
+	color: #0077c9;
 	display: none;
 	font-size: 14px;
 	font-size: 0.875rem;
@@ -1388,7 +1471,7 @@ a:hover .nav-title {
 	background-color: transparent;
 	border: 0;
 	box-shadow: none;
-	color: #222;
+	color: #0077c9;
 	display: block;
 	font-size: 16px;
 	right: -0.5em;
@@ -1493,15 +1576,6 @@ body {
 	opacity: 0.7;
 }
 
-.site-branding .site-branding-logo {
-	max-width: 300px;
-	margin: 0 auto;
-}
-
-.site-branding .site-branding-logo img {
-	width: 100%;
-}
-
 .site-title {
 	clear: none;
 	font-size: 24px;
@@ -1525,34 +1599,33 @@ body {
 
 body.has-header-image .site-title, body.has-header-video .site-title, body.has-header-image .site-title a, body.has-header-video .site-title a {
 	color: #fff;
-	text-align: center;
 }
 
 .site-description {
 	color: #666;
-	text-align: center;
-	font-size: 32px;
-	font-size: 2rem;
+	font-size: 13px;
+	font-size: 0.8125rem;
 	margin-bottom: 0;
 }
 
 body.has-header-image .site-description, body.has-header-video .site-description {
 	color: #fff;
 	opacity: 0.8;
-	text-align: center;
 }
 
-/* .custom-logo-link {
-  display: inline-block;
-  padding-right: 1em;
-  vertical-align: middle;
-  width: auto;
-  img {
-    display: inline-block;
-    max-height: 80px;
-    width: auto;
-  }
-} */
+.custom-logo-link {
+	display: inline-block;
+	padding-right: 1em;
+	vertical-align: middle;
+	width: auto;
+}
+
+.custom-logo-link img {
+	display: inline-block;
+	max-height: 80px;
+	width: auto;
+}
+
 body.home.title-tagline-hidden.has-header-image .custom-logo-link img, body.home.title-tagline-hidden.has-header-video .custom-logo-link img {
 	max-height: 200px;
 	max-width: 100%;
@@ -1563,14 +1636,8 @@ body.home.title-tagline-hidden.has-header-image .custom-logo-link img, body.home
 }
 
 body:not(.title-tagline-hidden) .site-branding-text {
-	/*  display: inline-block;
-  vertical-align: middle; */
-}
-
-/* Hide .site-title the TwentySeventeen way */
-.site-title {
-	position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
+	display: inline-block;
+	vertical-align: middle;
 }
 
 .custom-header {
@@ -1726,6 +1793,12 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	display: table-cell;
 	height: 100%;
 	vertical-align: bottom;
+}
+
+/* Hide .site-title and .site-description */
+.site-title, .site-description {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
 }
 
 /*--------------------------------------------------------------
@@ -2250,7 +2323,7 @@ body:not(.dvseventeen-front-page) .entry-header {
 	border-top: 1px solid #eee;
 	color: white;
 	background-color: #0077c9;
-	background-image: -webkit-linear-gradient(150deg, #3fae2a 20%, #0077c9 20%);
+	background-image: -webkit-linear-gradient(170deg, #3fae2a 15%, #0077c9 15%);
 	min-height: 200px;
 }
 
@@ -2736,17 +2809,23 @@ h2.widget-title {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: top;
+	    -ms-flex-align: top;
+	        align-items: top;
 }
 
 .ridgeline-link {
-	padding: 0 1em;
 	width: 270px;
+	padding: 5%;
+}
+
+@media screen and (min-width: 48em) {
+	.ridgeline-link {
+		padding: 0 2em;
+	}
 }
 
 .ridgeline-link a {
@@ -2759,6 +2838,135 @@ h2.widget-title {
 
 #text-6 {
 	padding-bottom: 0px;
+}
+
+/* Sponsor Widget Styles */
+.sponsors-panel {
+	border-top: 1px solid #ddd;
+	width: 100%;
+}
+
+.sponsors-panel-inner {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.partner-logo {
+	padding: 10px;
+}
+
+.wrap-wide {
+	width: 100%;
+	padding-bottom: 2em;
+	padding-top: 2.5em;
+}
+
+.wrap-wide h2 {
+	display: none;
+}
+
+@media screen and (min-width: 48em) {
+	.wrap-wide {
+		padding-left: 5em;
+		padding-right: 5em;
+		padding-bottom: 0;
+	}
+}
+
+/* Sponsor-Specific Styles */
+.partner-logo {
+	text-align: center;
+	min-width: 120px;
+}
+
+.logo-salomon {
+	width: 120px;
+}
+
+.logo-suunto {
+	width: 90px;
+}
+
+.logo-nesters-market {
+	width: 140px;
+}
+
+.logo-runners-den {
+	min-width: 90px;
+	width: 90px;
+}
+
+.logo-drymax {
+	width: 85px;
+}
+
+.logo-princeton-tec {
+	width: 110px;
+}
+
+.logo-canada-wide {
+	width: 140px;
+}
+
+.logo-trailmapps {
+	width: 160px;
+}
+
+.logo-bc-hydro {
+	width: 140px;
+}
+
+@media screen and (min-width: 48em) {
+	.partner-logo {
+		box-sizing: content-box;
+		min-width: 180px;
+		height: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.logo-salomon {
+		min-width: 160px;
+		width: 160px;
+	}
+	.logo-nesters-market {
+		width: 200px;
+	}
+	.logo-runners-den {
+		min-width: 130px;
+		width: 130px;
+	}
+	.logo-suunto {
+		width: 180px;
+	}
+	.logo-drymax {
+		min-width: 150px;
+		width: 150px;
+	}
+	.logo-princeton-tec {
+		width: 200px;
+	}
+	.logo-canada-wide {
+		width: 200px;
+	}
+	.logo-hammer {
+		min-width: 150px;
+		width: 150px;
+	}
+	.logo-trailmapps {
+		width: 220px;
+	}
+	.logo-bc-hydro {
+		width: 200px;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -3507,6 +3715,9 @@ embed, iframe, object {
 		color: #767676;
 		top: 0.7em;
 	}
+	#top-menu.menu {
+		text-align: center;
+	}
 	/* Scroll down arrow */
 	.menu-scroll-down:focus {
 		outline: thin dotted;
@@ -3516,12 +3727,16 @@ embed, iframe, object {
 		width: 18px;
 	}
 	/* Front Page */
-	.dvseventeen-front-page.has-header-image .site-branding, .dvseventeen-front-page.has-header-video .site-branding {
-		margin-bottom: 70px;
-	}
-	.home.blog.has-header-image .site-branding, .home.blog.has-header-video .site-branding {
-		margin-bottom: 70px;
-	}
+	/* .dvseventeen-front-page {
+    &.has-header-image .site-branding, &.has-header-video .site-branding {
+      margin-bottom: 70px;
+    }
+  }
+  .home.blog {
+    &.has-header-image .site-branding, &.has-header-video .site-branding {
+      margin-bottom: 70px;
+    }
+  } */
 	.dvseventeen-front-page.has-header-image .custom-header-media, .dvseventeen-front-page.has-header-video .custom-header-media {
 		height: 1200px;
 		height: 100vh;

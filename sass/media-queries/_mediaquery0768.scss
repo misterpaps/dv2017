@@ -327,6 +327,10 @@
       top: 0.7em;
     }
   }
+
+  #top-menu.menu {
+    text-align: center;
+  }
   /* Scroll down arrow */
   .menu-scroll-down {
     &:focus {
@@ -338,7 +342,7 @@
     }
   }
   /* Front Page */
-  .dvseventeen-front-page {
+  /* .dvseventeen-front-page {
     &.has-header-image .site-branding, &.has-header-video .site-branding {
       margin-bottom: 70px;
     }
@@ -347,7 +351,7 @@
     &.has-header-image .site-branding, &.has-header-video .site-branding {
       margin-bottom: 70px;
     }
-  }
+  } */
   .dvseventeen-front-page {
     &.has-header-image .custom-header-media, &.has-header-video .custom-header-media {
       height: 1200px;

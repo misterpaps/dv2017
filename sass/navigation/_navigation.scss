@@ -1,5 +1,6 @@
 .navigation-top {
-  background: $white1;
+  background: $white1; // url(http://diezvista.dev/wp-content/themes/dvseventeen/assets/images/logos/Diez-Vista-horizontal-logo-RGB.svg) no-repeat top left;
+
   border-bottom: 1px solid $silver2;
   border-top: 1px solid $silver2;
   font-size: 16px;
@@ -16,7 +17,7 @@
     transition: color 0.2s;
   }
   .current-menu-item > a, .current_page_item > a {
-    color: $gray1;
+    color: $black1;
   }
 }
 
@@ -79,7 +80,7 @@
     padding: 0.5em 0;
     text-decoration: none;
     &:hover {
-      color: $gray1;
+      color: $black3;
     }
   }
 }
@@ -91,7 +92,7 @@
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: $black2;
+  color: $dv-blue;
   display: none;
   font-size: 14px;
   font-size: 0.875rem;
@@ -143,7 +144,7 @@
   border: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: $black2;
+  color: $dv-blue;
   display: block;
   font-size: 16px;
   right: -0.5em;

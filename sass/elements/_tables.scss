@@ -31,3 +31,75 @@ th:last-child,
 td:last-child {
   padding-right: 0;
 }
+
+// Race Results Table
+
+.course-records-container {
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+.course-records-title,
+.previous-results-title {
+  color: $dv-blue;
+  text-align: center;
+  padding-bottom: 1em;
+}
+
+.course-record {
+  font-size: 1.25rem;
+  padding-bottom: 0.5em;
+}
+
+.results-list {
+  font-size: 0.875em;
+
+  @media screen and (min-width: 48em) {
+    font-size: 1em;
+  }
+
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  tr {
+      background-color: $white1;
+    &:hover {
+      background-color: $white2; // $silver1;
+      transition: background-color 100ms ease-in;
+    }
+  }
+}
+
+.results-year {
+   padding-right: 3%;
+   padding-left: 1%;
+}
+
+.results-winner {
+  padding-left: 3%;
+}
+
+.results-time {
+  padding-right: 3%;
+}
+
+.results-link {
+  text-align: right;
+}
+
+td.results-link a:hover, 
+.entry-content a:hover {
+  box-shadow: none;
+}
+
+.results-no-race {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  font-size: 0.875em;
+}
+
+// Flexbox Table
+

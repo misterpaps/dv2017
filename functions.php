@@ -91,7 +91,7 @@ function dvseventeen_setup() {
 
 	// Add theme support for Custom Logo.
 	add_theme_support( 'custom-logo', array(
-		'width'       => 500,
+		'width'       => 800,
 		'height'      => 500,
 		'flex-width'  => true,
 	) );
@@ -448,6 +448,8 @@ function dvseventeen_scripts() {
 	wp_enqueue_script( 'dvseventeen-global', get_theme_file_uri( '/assets/js/global.js' ), array( 'jquery' ), '1.0', true );
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
+
+// Add custom scripts
 
 	wp_enqueue_script( 'custom-js', get_theme_file_uri( '/assets/js/scripts.js' ), array( 'jquery' ), '1.0.0', true );
 

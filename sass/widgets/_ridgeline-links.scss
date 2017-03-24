@@ -1,13 +1,17 @@
 .ridgeline-links {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
+	align-items: top;
 }
 
 .ridgeline-link {
-	padding: 0 1em;
 	width: 270px;
+	padding: 5%;
 
+	@media screen and (min-width: 48em) {
+		padding: 0 2em;
+		
+	}
 
 	a {
 		box-shadow: none;

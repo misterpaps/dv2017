@@ -1,3 +1,9 @@
+$query__small: 30em;
+$query__medium: 48em;
+$query__large: 67em;
+$query__xlarge: 79em;
+
+
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
 	font-size: ($sizeValue * 20) * 1px;
@@ -23,6 +29,17 @@
 	clear: both;
 }
 
+// Alpha from thesassway.com
+
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+
 // Media Queries
 @mixin atSmall {
 	@media screen and (min-width: #{$query__small}) {
@@ -41,3 +58,4 @@
 		@content;
 	}
 }
+
