@@ -5,6 +5,16 @@
 .dvseventeen-panel {
   overflow: hidden;
   position: relative;
+
+  &:nth-last-child(2) {
+    color: $white2;
+    background-color: $dv-blue;
+  }
+
+  &:nth-last-child(1) {
+    color: $white2;
+    background-color: $dv-green;
+  }
 }
 
 .panel-image {

@@ -1,6 +1,8 @@
 .utmb-link {
 	max-width: 12em;
 	margin: 0 auto;
+	text-align: center;
+
 	
 	a {
 		box-shadow: none;
@@ -8,5 +10,13 @@
 
 	a img {
 		box-shadow: none;	
+		padding-bottom: 2em;
+	}
+
+	p {
+		font-size: 18px;
+		font-size: 1.125rem;
+		font-weight: 500;
+		text-transform: uppercase;
 	}
 }

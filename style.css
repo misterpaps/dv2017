@@ -1816,6 +1816,16 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	position: relative;
 }
 
+.dvseventeen-panel:nth-last-child(2) {
+	color: #fafafa;
+	background-color: #0077c9;
+}
+
+.dvseventeen-panel:nth-last-child(1) {
+	color: #fafafa;
+	background-color: #3fae2a;
+}
+
 .panel-image {
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -2798,6 +2808,7 @@ h2.widget-title {
 .utmb-link {
 	max-width: 12em;
 	margin: 0 auto;
+	text-align: center;
 }
 
 .utmb-link a {
@@ -2806,6 +2817,14 @@ h2.widget-title {
 
 .utmb-link a img {
 	box-shadow: none;
+	padding-bottom: 2em;
+}
+
+.utmb-link p {
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 500;
+	text-transform: uppercase;
 }
 
 .ridgeline-links {
