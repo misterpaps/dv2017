@@ -265,7 +265,7 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 .has-header-image.dvseventeen-front-page .site-branding, .has-header-video.dvseventeen-front-page .site-branding, .has-header-image.home.blog .site-branding, .has-header-video.home.blog .site-branding {
   display: table-cell;
-  height: 100%;
+  // height: 100%;
   vertical-align: bottom;
 }
 
