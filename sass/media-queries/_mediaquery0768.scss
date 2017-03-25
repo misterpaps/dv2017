@@ -1,4 +1,4 @@
-@media screen and (min-width: 48em) {
+@include atMedium {
   /* Typography */
   body, button, input, select, textarea {
     font-size: 16px;
@@ -20,12 +20,12 @@
   .has-sidebar {
     &:not(.error404) #primary {
       float: left;
-      // width: 58%;
+      width: 58%;
     }
     #secondary {
       float: right;
       padding-top: 0;
-      // width: 36%;
+      width: 36%;
     }
   }
   .error404 #primary {
@@ -73,9 +73,9 @@
     top: 0;
   }
   .custom-logo-link {
-    padding-right: 2em;
+    
     img {
-      max-width: 350px;
+      max-width: 450px;
     }
   }
   body.home.title-tagline-hidden {
@@ -342,7 +342,7 @@
     }
   }
   /* Front Page */
-  /* .dvseventeen-front-page {
+ .dvseventeen-front-page {
     &.has-header-image .site-branding, &.has-header-video .site-branding {
       margin-bottom: 70px;
     }
@@ -351,7 +351,7 @@
     &.has-header-image .site-branding, &.has-header-video .site-branding {
       margin-bottom: 70px;
     }
-  } */
+  } 
   .dvseventeen-front-page {
     &.has-header-image .custom-header-media, &.has-header-video .custom-header-media {
       height: 1200px;
@@ -402,7 +402,7 @@
   .background-fixed .panel-image {
     background-attachment: fixed;
   }
-  /* .page-two-column .panel-content {
+   .page-two-column .panel-content {
     .entry-header {
       float: left;
       width: 36%;
@@ -416,7 +416,7 @@
       float: right;
       width: 58%;
     }
-  } */
+  } 
   /* Front Page - Recent Posts */
   .panel-content .recent-posts {
     article {

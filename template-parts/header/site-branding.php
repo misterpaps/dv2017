@@ -12,8 +12,9 @@
 	<div class="wrap">
 
 	<?php the_custom_logo(); ?>
+	<!-- 
 	<div class="site-branding-logo"><img src="http://diezvista.dev/wp-content/themes/dvseventeen/assets/images/logos/Diez-Vista-horizontal-logo-white.svg" /></div>
-
+	-->
 		<div class="site-branding-text">
 			<?php if ( is_front_page() ) : ?>
 				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>

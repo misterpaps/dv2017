@@ -1,5 +1,6 @@
 #masthead .wrap {
   position: relative;
+  text-align: center;
 }
 
 .site-header {
@@ -11,7 +12,9 @@
 
 .site-branding {
   padding: 1em 0;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   -webkit-transition: margin-bottom 0.2s;
   transition: margin-bottom 0.2s;
   z-index: 3;
@@ -52,9 +55,10 @@ body {
 }
 
 .site-description {
-  color: $gray3;
-  font-size: 13px;
-  font-size: 0.8125rem;
+  color: $silver3;
+  font-size: 24px;
+  font-size: 1.5rem;
+  letter-spacing: 0.07em;
   margin-bottom: 0;
 }
 
@@ -67,12 +71,12 @@ body {
 
 .custom-logo-link {
   display: inline-block;
-  padding-right: 1em;
   vertical-align: middle;
   width: auto;
   img {
     display: inline-block;
-    max-height: 80px;
+    max-width: 350px;
+
     width: auto;
   }
 }
@@ -91,7 +95,7 @@ body.home.title-tagline-hidden {
 }
 
 body:not(.title-tagline-hidden) .site-branding-text {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
 }
 
@@ -267,7 +271,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 /* Hide .site-title and .site-description */
 
-.site-title, .site-description {
+.site-title  {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
 }
+

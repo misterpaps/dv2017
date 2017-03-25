@@ -1,4 +1,4 @@
-@media screen and (min-width: 30em) {
+@include atSmall {
   /* Typography */
   body, button, input, select, textarea {
     font-size: 18px;
@@ -48,6 +48,8 @@
   /* Site Branding */
   .site-branding {
   padding: 3em 0;
+  width: 100%;
+
   }
   /* Front Page */
   .panel-content .wrap {
