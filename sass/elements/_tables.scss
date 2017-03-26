@@ -73,12 +73,21 @@ td:last-child {
 }
 
 .results-year {
-   padding-right: 3%;
-   padding-left: 1%;
+  padding-right: 3%;
+  padding-left: 1%;
+  text-align: right;
+
+  @include atMedium {
+    padding-right: 5%;
+  }
 }
 
 .results-winner {
   padding-left: 3%;
+
+  @include atMedium {
+    padding-left: 5%;
+  }
 }
 
 .results-time {
@@ -87,6 +96,7 @@ td:last-child {
 
 .results-link {
   text-align: right;
+  text-align: left;
 }
 
 td.results-link a:hover, 

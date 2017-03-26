@@ -4,7 +4,7 @@ Theme Name: DV Seventeen
 Author: Paps
 Author URI: https://davidpapineau.com/
 Description: DV Seventeen is a custom WP theme based on Twenty Seventeen.
-Version: 1.0
+Version: 0.0.03
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: dvseventeen
@@ -1025,10 +1025,23 @@ td:last-child {
 .results-year {
 	padding-right: 3%;
 	padding-left: 1%;
+	text-align: right;
+}
+
+@media screen and (min-width: 48em) {
+	.results-year {
+		padding-right: 5%;
+	}
 }
 
 .results-winner {
 	padding-left: 3%;
+}
+
+@media screen and (min-width: 48em) {
+	.results-winner {
+		padding-left: 5%;
+	}
 }
 
 .results-time {
@@ -1037,6 +1050,7 @@ td:last-child {
 
 .results-link {
 	text-align: right;
+	text-align: left;
 }
 
 td.results-link a:hover,
