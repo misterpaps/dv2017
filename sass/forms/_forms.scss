@@ -130,7 +130,7 @@ input {
 
 button {
   &:hover, &:focus {
-    background: $gray1;
+    background: rgba($dv-green, 0.8);
   }
 }
 
@@ -193,4 +193,9 @@ input {
 :-ms-input-placeholder {
   color: $black3;
   font-family: $font-family-placeholder;
+}
+
+.button-green {
+  background-color: $dv-green;
+  color: $white1;
 }

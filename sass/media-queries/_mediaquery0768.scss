@@ -72,12 +72,19 @@
     right: 0;
     top: 0;
   }
-  .custom-logo-link {
-    
+  
+  .page .custom-logo-link {
+    img {
+      max-width: 350px;
+    }
+  }
+
+  .home .custom-logo-link {
     img {
       max-width: 450px;
     }
   }
+
   body.home.title-tagline-hidden {
     &.has-header-image .custom-logo-link img, &.has-header-video .custom-logo-link img {
       max-width: 350px;
@@ -93,8 +100,8 @@
     font-size: 2.25rem;
   }
   .site-description {
-    font-size: 32px; // 16px;
-    font-size: 2rem; // 1rem;
+    font-size: 28px; // 16px;
+    font-size: 1.75rem; // 1rem;
   }
   /* Navigation */
   .navigation-top {

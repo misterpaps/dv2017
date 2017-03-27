@@ -80,8 +80,13 @@ body {
   img {
     display: inline-block;
     max-width: 350px;
+    // width: auto;
+  }
+}
 
-    width: auto;
+.page .custom-logo-link {
+  img {
+    max-width: 250px;
   }
 }
 

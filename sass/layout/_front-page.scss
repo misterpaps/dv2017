@@ -49,6 +49,8 @@
 
 .panel-content {
   position: relative;
+  text-align: center;
+
   .wrap {
     padding-bottom: 0.5em;
     padding-top: 1.75em;
@@ -56,6 +58,10 @@
 
   .entry-header {
     display: none;
+  }
+
+  .entry-content {
+    font-size: 1.5em;
   }
 }
 
@@ -98,4 +104,11 @@
   font-size: 11px;
   font-size: 0.6875rem;
   margin-left: 1em;
+}
+
+/* Front Page Panel Content Styles */
+
+.front-page-race-date {
+  font-weight: 500;
+  list-style: none;
 }
