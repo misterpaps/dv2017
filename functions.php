@@ -91,7 +91,7 @@ function dvseventeen_setup() {
 
 	// Add theme support for Custom Logo.
 	add_theme_support( 'custom-logo', array(
-		'width'       => 800,
+		'width'       => 500,
 		'height'      => 500,
 		'flex-width'  => true,
 	) );
@@ -449,8 +449,6 @@ function dvseventeen_scripts() {
 
 	wp_enqueue_script( 'jquery-scrollto', get_theme_file_uri( '/assets/js/jquery.scrollTo.js' ), array( 'jquery' ), '2.1.2', true );
 
-// Add custom scripts
-
 	wp_enqueue_script( 'custom-js', get_theme_file_uri( '/assets/js/scripts.js' ), array( 'jquery' ), '1.0.0', true );
 
 	wp_localize_script( 'dvseventeen-skip-link-focus-fix', 'dvseventeenScreenReaderText', $dvseventeen_l10n );
@@ -567,3 +565,33 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+// Include the Google Analytics Tracking Code (ga.js)
+// @ https://developers.google.com/analytics/devguides/collection/gajs/
+function google_analytics_tracking_code(){
+
+	$propertyID = 'UA-96318161-1'; // GA Property ID
+
+	if ($options['ga_enable']) { ?>
+
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', '<?php echo $propertyID; ?>']);
+		  _gaq.push(['_trackPageview']);
+
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+<?php }
+}
+
+// include GA tracking code before the closing head tag
+add_action('wp_head', 'google_analytics_tracking_code');
+
+// OR include GA tracking code before the closing body tag
+// add_action('wp_footer', 'google_analytics_tracking_code');
+
