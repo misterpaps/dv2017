@@ -958,7 +958,6 @@ table {
 }
 
 thead th {
-	border-bottom: 2px solid #bbb;
 	padding-bottom: 0.5em;
 }
 
@@ -1108,43 +1107,49 @@ td.results-link a:hover,
 /* DV Aid Stations */
 .dv-aid-stations {
 	width: 100%;
-	margin-bottom: 2em;
+	margin-bottom: 4em;
 }
 
-.dv-aid-stations .td-right {
+.dv-aid-stations-head .td-right,
+.dv-aid-stations-list .td-right {
 	text-align: right;
 	padding-right: 5%;
 }
 
-.dv-aid-stations .td-left {
+.dv-aid-stations-head .td-left,
+.dv-aid-stations-list .td-left {
 	text-align: left;
 	padding-left: 5%;
 }
 
-.dv-aid-stations tr {
+.dv-aid-stations-head .td-center,
+.dv-aid-stations-list .td-center {
+	text-align: center;
+}
+
+.dv-aid-stations-list tr {
 	border-bottom: 1px solid #fff;
 	padding-left: 10px;
 }
 
-.dv-aid-stations tr:nth-of-type(odd) {
+.dv-aid-stations-list tr:nth-of-type(odd) {
 	background-color: #f1f1f1;
 }
 
 @media screen and (min-width: 48em) {
-	.dv-aid-stations {
-		width: 70%;
-		margin-left: 10%;
+	.dv-aid-stations-list {
+		width: 90%;
+		margin-left: auto;
 		margin-right: auto;
 	}
 }
 
-.dv-aid-stations thead {
+.dv-aid-stations-list thead {
 	border-bottom: none;
 }
 
-.dv-aid-stations tr .aid-head {
+.dv-aid-stations-list thead tr:nth-of-type(1) {
 	background-color: #fff;
-	border-bottom: none;
 }
 
 /*--------------------------------------------------------------
@@ -2504,6 +2509,7 @@ body:not(.dvseventeen-front-page) .entry-header {
 
 .button-center {
 	text-align: center;
+	padding-top: 1.5em;
 	padding-bottom: 2em;
 }
 
@@ -2601,11 +2607,25 @@ body:not(.dvseventeen-front-page) .entry-header {
 }
 
 /* Footer Contact Bar */
+.contact-panel {
+	margin-top: 1.5em;
+}
+
 .contact-info {
-	font-size: 1.5em;
-	font-weight: 600;
-	letter-spacing: 0.07em;
+	font-size: 1.25em;
+	font-weight: 500;
+	letter-spacing: 0.05em;
 	font-style: italic;
+	text-align: center;
+	color: #3fae2a;
+}
+
+.contact-info a {
+	color: #0077c9;
+}
+
+.contact-info a:hover {
+	color: #003b63;
 }
 
 /*--------------------------------------------------------------

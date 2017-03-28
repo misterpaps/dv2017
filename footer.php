@@ -15,10 +15,10 @@
 
 		</div><!-- #content -->
 
-		<?php if ( ! is_front_page() ) : ?>
+		<?php if ( ! is_front_page() && ! is_page( 'contact' ) ) : ?>
 
 			<?php get_template_part( 'template-parts/footer/contact', 'info' ); ?>
-			
+
 		<?php endif; ?>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
