@@ -6,12 +6,12 @@
   overflow: hidden;
   position: relative;
 
-  &:nth-last-child(2) {
+  &:nth-of-type(odd) {
     color: $white2;
     background-color: $dv-blue;
   }
 
-  &:nth-last-child(1) {
+  &:nth-of-type(even) {
     color: $white2;
     background-color: $dv-green;
   }
@@ -109,6 +109,7 @@
 /* Front Page Panel Content Styles */
 
 .front-page-race-date {
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.05em;
   list-style: none;
 }

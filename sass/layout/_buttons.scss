@@ -1,13 +1,13 @@
 /* Buttons */
 
 .entry-content .button {
-  background-color: $dv-green;
-  border: 0;
+  background-color: $white1;
+  border: 2px $silver1 solid;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   -webkit-box-shadow: none;
   box-shadow: none;
-  color: $white1;
+  color: $dv-blue;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
@@ -21,7 +21,32 @@
   text-transform: uppercase;
 
   &:hover {
+    background-color: $silver2;
+    color: darken($dv-blue, 5%);;
+  }
+}
+
+.entry-content .button-green {
+	background-color: $dv-green;
+	color: $white1;
+
+	  &:hover {
     background-color: darken($dv-green, 5%);
     color: $silver2;
   }
+}
+
+.entry-content .button-blue {
+	background-color: $dv-blue;
+	color: $white1;
+
+	  &:hover {
+    background-color: darken($dv-blue, 5%);
+    color: $silver2;
+  }
+}
+
+.button-center {
+	text-align: center;
+	padding-bottom: 2em;
 }

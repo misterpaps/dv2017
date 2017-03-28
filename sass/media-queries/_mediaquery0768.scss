@@ -402,8 +402,8 @@
     padding-top: 6em;
   }
   .panel-image {
-    height: 100vh;
-    max-height: 1200px;
+    height: 65vh;
+    max-height: 800px;
   }
   /* With panel images 100% of the screen height, we're going to fix the background image where supported to create a parallax-like effect. */
   .background-fixed .panel-image {
@@ -481,7 +481,7 @@
   body {
     &:not(.has-sidebar):not(.page-one-column) .page-header, &.has-sidebar.error404 #primary .page-header {
       float: left;
-      width: 36%;
+      width: 100%; // 36%;
     }
     &.page-two-column {
       &:not(.archive) #primary .entry-header, &.archive:not(.has-sidebar) #primary .page-header {
@@ -492,7 +492,7 @@
   }
   .blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article {
     float: right;
-    width: 58%;
+    width: 100%; // 58%;
   }
   .error404 {
     &:not(.has-sidebar) #primary .page-content, &.has-sidebar #primary .page-content {

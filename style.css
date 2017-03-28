@@ -904,11 +904,6 @@ input[type="submit"].secondary:hover, input[type="submit"].secondary:focus {
 	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 
-.button-green {
-	background-color: #3fae2a;
-	color: #fff;
-}
-
 /*--------------------------------------------------------------
 7.0 Formatting
 --------------------------------------------------------------*/
@@ -946,6 +941,11 @@ dt {
 
 dd {
 	margin: 0 1.5em 1.5em;
+}
+
+/* DV Lists */
+.dv-list {
+	padding-left: 5%;
 }
 
 /*--------------------------------------------------------------
@@ -1068,6 +1068,74 @@ td.results-link a:hover,
 	font-style: italic;
 	font-size: 14px;
 	font-size: 0.875em;
+}
+
+/* DV Timetable */
+.dv-timetable {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.dv-timetable .tr-right {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.dv-timetable tr {
+	border-bottom: 1px solid #fff;
+}
+
+@media screen and (min-width: 30em) {
+	.dv-timetable {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.dv-timetable td {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (min-width: 48em) {
+	.dv-timetable {
+		width: 70%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
+}
+
+/* DV Aid Stations */
+.dv-aid-stations {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+.dv-aid-stations .td-right {
+	text-align: right;
+	padding-right: 5%;
+}
+
+.dv-aid-stations .td-left {
+	text-align: left;
+	padding-left: 5%;
+}
+
+.dv-aid-stations tr {
+	border-bottom: 1px solid #fff;
+	padding-left: 10px;
+}
+
+.dv-aid-stations tr:nth-of-type(odd) {
+	background-color: #f1f1f1;
+}
+
+@media screen and (min-width: 48em) {
+	.dv-aid-stations {
+		width: 70%;
+		margin-left: 10%;
+		margin-right: auto;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1842,12 +1910,12 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 	position: relative;
 }
 
-.dvseventeen-panel:nth-last-child(2) {
+.dvseventeen-panel:nth-of-type(odd) {
 	color: #fafafa;
 	background-color: #0077c9;
 }
 
-.dvseventeen-panel:nth-last-child(1) {
+.dvseventeen-panel:nth-of-type(even) {
 	color: #fafafa;
 	background-color: #3fae2a;
 }
@@ -1941,7 +2009,8 @@ body:not(.has-header-image):not(.has-header-video) .custom-header-media {
 
 /* Front Page Panel Content Styles */
 .front-page-race-date {
-	font-weight: 500;
+	font-weight: 400;
+	letter-spacing: 0.05em;
 	list-style: none;
 }
 
@@ -2366,13 +2435,26 @@ body:not(.dvseventeen-front-page) .entry-header {
 	margin-bottom: 3em;
 }
 
+/* Asides */
+.aside-blue {
+	padding: 2em 1.6em;
+	background-color: #c9e9ff;
+	margin-bottom: 1.4em;
+}
+
+.aside-green {
+	padding: 2em 1.6em;
+	background-color: #e3f7e0;
+	margin-bottom: 1.4em;
+}
+
 /* Buttons */
 .entry-content .button {
-	background-color: #3fae2a;
-	border: 0;
+	background-color: #fff;
+	border: 2px #f1f1f1 solid;
 	border-radius: 5px;
 	box-shadow: none;
-	color: #fff;
+	color: #0077c9;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 18px;
@@ -2387,8 +2469,33 @@ body:not(.dvseventeen-front-page) .entry-header {
 }
 
 .entry-content .button:hover {
+	background-color: #eee;
+	color: #0068b0;
+}
+
+.entry-content .button-green {
+	background-color: #3fae2a;
+	color: #fff;
+}
+
+.entry-content .button-green:hover {
 	background-color: #389925;
 	color: #eee;
+}
+
+.entry-content .button-blue {
+	background-color: #0077c9;
+	color: #fff;
+}
+
+.entry-content .button-blue:hover {
+	background-color: #0068b0;
+	color: #eee;
+}
+
+.button-center {
+	text-align: center;
+	padding-bottom: 2em;
 }
 
 /*--------------------------------------------------------------
@@ -2969,6 +3076,7 @@ h2.widget-title {
 /* Sponsor-Specific Styles */
 .partner-logo {
 	text-align: center;
+	width: 120px;
 	min-width: 120px;
 }
 
@@ -3853,8 +3961,8 @@ embed, iframe, object {
 		padding-top: 6em;
 	}
 	.panel-image {
-		height: 100vh;
-		max-height: 1200px;
+		height: 65vh;
+		max-height: 800px;
 	}
 	/* With panel images 100% of the screen height, we're going to fix the background image where supported to create a parallax-like effect. */
 	.background-fixed .panel-image {
@@ -3927,7 +4035,7 @@ embed, iframe, object {
 	}
 	body:not(.has-sidebar):not(.page-one-column) .page-header, body.has-sidebar.error404 #primary .page-header {
 		float: left;
-		width: 36%;
+		width: 100%;
 	}
 	body.page-two-column:not(.archive) #primary .entry-header, body.page-two-column.archive:not(.has-sidebar) #primary .page-header {
 		float: left;
@@ -3935,7 +4043,7 @@ embed, iframe, object {
 	}
 	.blog:not(.has-sidebar) #primary article, .archive:not(.page-one-column):not(.has-sidebar) #primary article, .search:not(.has-sidebar) #primary article {
 		float: right;
-		width: 58%;
+		width: 100%;
 	}
 	.error404:not(.has-sidebar) #primary .page-content, .error404.has-sidebar #primary .page-content {
 		float: right;
