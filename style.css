@@ -1138,6 +1138,15 @@ td.results-link a:hover,
 	}
 }
 
+.dv-aid-stations thead {
+	border-bottom: none;
+}
+
+.dv-aid-stations tr .aid-head {
+	background-color: #fff;
+	border-bottom: none;
+}
+
 /*--------------------------------------------------------------
 10.0 Links
 --------------------------------------------------------------*/
@@ -2589,6 +2598,14 @@ body:not(.dvseventeen-front-page) .entry-header {
 .site-footer .textwidget {
 	font-weight: 300;
 	letter-spacing: 0.03em;
+}
+
+/* Footer Contact Bar */
+.contact-info {
+	font-size: 1.5em;
+	font-weight: 600;
+	letter-spacing: 0.07em;
+	font-style: italic;
 }
 
 /*--------------------------------------------------------------

@@ -15,7 +15,11 @@
 
 		</div><!-- #content -->
 
-		<!-- Add Sponsors Here -->
+		<?php if ( ! is_front_page() ) : ?>
+
+			<?php get_template_part( 'template-parts/footer/contact', 'info' ); ?>
+			
+		<?php endif; ?>
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="wrap">

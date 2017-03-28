@@ -164,7 +164,6 @@ td.results-link a:hover,
     padding-left: 10px;
   }
 
-
   tr:nth-of-type(odd) {
     background-color: $silver1;
   }
@@ -173,6 +172,15 @@ td.results-link a:hover,
     width: 70%;
     margin-left: 10%;
     margin-right: auto;
+  }
+  
+  thead {
+    border-bottom: none;
+  }
+
+  tr .aid-head {
+    background-color: $white1;
+    border-bottom: none;
   }
 }
 
